@@ -1,0 +1,7 @@
+- hosts: nodes
+  become: yes
+  tasks:
+  - name: install net-tools
+    apt:
+      name: net-tools
+      state: present
